@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Text;
-using ULaw.ApplicationProcessor.Enums;  
+using Ulaw.ApplicationProcessor.Enums;
+using ULaw.ApplicationProcessor;
 
-namespace ULaw.ApplicationProcessor
+namespace Ulaw.ApplicationProcessor.Entity.Application
 {
-    public class Application
+    public class Application : IApplication
     {
         public Application(string faculty, string CourseCode, DateTime Startdate, string Title, string FirstName, string LastName, DateTime DateOfBirth, bool requiresVisa)
         {

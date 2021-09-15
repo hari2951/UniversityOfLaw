@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ULaw.ApplicationProcessor;
-using ULaw.ApplicationProcessor.Enums;
+using Ulaw.ApplicationProcessor.Entity.Application;
+using Ulaw.ApplicationProcessor.Enums;
 
 namespace ULaw.ApplicationProcessor.Tests
 {
