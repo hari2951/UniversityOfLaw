@@ -1,8 +1,8 @@
 ﻿using System.Text;
 using Ulaw.ApplicationProcessor.Entity.Application;
-using ULaw.ApplicationProcessor;
+using ULaw.ApplicationProcessor.Enums;
 
-namespace Ulaw.ApplicationProcessor.Helper
+namespace Ulaw.ApplicationProcessor.Templates
 {
     public static class GetHTMLTemplates
     {

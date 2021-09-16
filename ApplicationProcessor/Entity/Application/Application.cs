@@ -15,9 +15,8 @@ namespace Ulaw.ApplicationProcessor.Entity.Application
             this.Title = Title;
             this.FirstName = FirstName;
             this.LastName = LastName;
-            this.RequiresVisa = RequiresVisa;
-            this.DateOfBirth = DateOfBirth;
             this.RequiresVisa = requiresVisa;
+            this.DateOfBirth = DateOfBirth;
         }
 
         public Guid ApplicationId { get; set; }
