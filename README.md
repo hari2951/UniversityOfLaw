@@ -22,3 +22,16 @@ Good comments are as valid as code.
 
 ***
 ## Good Luck
+
+
+### Post Test.
+
+####Assumption
+I have noticed that in the html template when degree is Third (DegreeGradeEnum.third), one of the line breaker is written as <br> where as in all other places it is <br/>. I believe this a typo and corrected this as this string in now coming from a single place to avoid code duplication.     
+
+####TODO/COMMENTS
+1.	Add more unit test cases for handlers. 
+2.	Exception handling and error logging can be improved by doing error and exception handling at low level.
+3.	Getting HTML template for each case can be done using a service that inherit from a common interface. By doing this, the output string can be changed dynamically. 
+4.	Can add more validation/defency coding
+
