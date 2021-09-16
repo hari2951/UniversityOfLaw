@@ -5,8 +5,4 @@
     <RootNamespace>Ulaw.ApplicationProcessor</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Constants\" />
-  </ItemGroup>
-
 </Project>
