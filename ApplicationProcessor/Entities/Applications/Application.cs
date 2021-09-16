@@ -20,14 +20,24 @@ namespace Ulaw.ApplicationProcessor.Entities.Application
 
         public string Process()
         {
-            var unSuccessfulApplication = new UnSuccessfulApplicationHandler();
-            var successfulApplication = new SuccessfulApplicationHandler();
-            var assessingApplication = new AssessingApplicationHandler();
+            try
+            {
+                var unSuccessfulApplication = new UnSuccessfulApplicationHandler();
+                var successfulApplication = new SuccessfulApplicationHandler();
+                var assessingApplication = new AssessingApplicationHandler();
 
-            unSuccessfulApplication.SetSuccessor(successfulApplication);
-            successfulApplication.SetSuccessor(assessingApplication);
-            
-            return unSuccessfulApplication.HandleRequest(this);
+                unSuccessfulApplication.SetSuccessor(successfulApplication);
+                successfulApplication.SetSuccessor(assessingApplication);
+
+                return unSuccessfulApplication.HandleRequest(this);
+            }
+            catch(Exception ex)
+            {
+                //TODO
+                //Log Exception
+                //Send proper error message to the user.
+                return string.Empty;
+            }
         }
     }
 }

@@ -8,14 +8,15 @@ namespace Ulaw.ApplicationProcessor.Handler.Application
     {
         public override string HandleRequest(IApplication application)
         {
-            if (application.Candidate.DegreeGrade != DegreeGradeEnum.TwoTwo 
-                && (application.Candidate.DegreeSubject == DegreeSubjectEnum.Law
-                || application.Candidate.DegreeSubject == DegreeSubjectEnum.LawAndBusiness))
+            if (application?.Candidate?.DegreeGrade != DegreeGradeEnum.TwoTwo
+              && (application?.Candidate?.DegreeSubject == DegreeSubjectEnum.Law
+              || application?.Candidate?.DegreeSubject == DegreeSubjectEnum.LawAndBusiness))
             {
                 return GetHTMLTemplates.GetSuccessfulApplicationTemplate(application);
             }
 
             return base.HandleRequest(application);
+
         }
     }
 }

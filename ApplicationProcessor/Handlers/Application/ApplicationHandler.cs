@@ -2,7 +2,7 @@
 
 namespace Ulaw.ApplicationProcessor.Handler.Application
 {
-    public abstract class ApplicationHandler
+    public abstract class ApplicationHandler //Can use interface in C#8+
     {
         protected ApplicationHandler successor;
 
