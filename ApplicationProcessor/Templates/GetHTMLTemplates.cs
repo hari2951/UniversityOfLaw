@@ -9,7 +9,7 @@ namespace Ulaw.ApplicationProcessor.Templates
         public static string GetSuccessfulApplicationTemplate(IApplication application)
         {
             var res = new StringBuilder();
-            res.Append($"{GetHeader(application.FirstName)}");
+            res.Append($"{GetHeader(application.Candidate.FirstName)}");
             res.Append($"{GetSuccessApplicationBody(application)}");
             res.Append($"{GetFooter()}");
 
@@ -19,7 +19,7 @@ namespace Ulaw.ApplicationProcessor.Templates
         public static string GetUnSuccessfulApplicationTemplate(IApplication application)
         {
             var res = new StringBuilder();
-            res.Append($"{GetHeader(application.FirstName)}");
+            res.Append($"{GetHeader(application.Candidate.FirstName)}");
             res.Append($"{GetUnSuccessApplicationBody()}");
             res.Append($"{GetFooter()}");
 
@@ -29,7 +29,7 @@ namespace Ulaw.ApplicationProcessor.Templates
         public static string GetAssessingfulApplicationTemplate(IApplication application)
         {
             var res = new StringBuilder();
-            res.Append($"{GetHeader(application.FirstName)}");
+            res.Append($"{GetHeader(application.Candidate.FirstName)}");
             res.Append($"{GetAssessingApplicationBody(application)}");
             res.Append($"{GetFooter()}");
 
@@ -55,8 +55,8 @@ namespace Ulaw.ApplicationProcessor.Templates
         private static string GetSuccessApplicationBody(IApplication application)
         {
             var depositAmount = 350.00M;
-            var result = new StringBuilder($"<p/> Further to your recent application, we are delighted to offer you a place on our course reference: {application.CourseCode} starting on {application.StartDate.ToLongDateString()}.");
-            result.Append(string.Format($"<br/> This offer will be subject to evidence of your qualifying {application.DegreeSubject.ToDescription()} degree at grade: {application.DegreeGrade.ToDescription()}."));
+            var result = new StringBuilder($"<p/> Further to your recent application, we are delighted to offer you a place on our course reference: {application.Course.CourseCode} starting on {application.Course.StartDate.ToLongDateString()}.");
+            result.Append(string.Format($"<br/> This offer will be subject to evidence of your qualifying {application.Candidate.DegreeSubject.ToDescription()} degree at grade: {application.Candidate.DegreeGrade.ToDescription()}."));
             result.Append(string.Format($"<br/> Please contact us as soon as possible to confirm your acceptance of your place and arrange payment of the £{depositAmount} deposit fee to secure your place."));
             result.Append(string.Format("<br/> We look forward to welcoming you to the University,"));
 
@@ -74,7 +74,7 @@ namespace Ulaw.ApplicationProcessor.Templates
 
         private static string GetAssessingApplicationBody(IApplication application)
         {
-            var result = new StringBuilder($"<p/> Further to your recent application for our course reference: {application.CourseCode} starting on {application.StartDate.ToLongDateString()}, we are writing to inform you that we are currently assessing your information and will be in touch shortly.");
+            var result = new StringBuilder($"<p/> Further to your recent application for our course reference: {application.Course.CourseCode} starting on {application.Course.StartDate.ToLongDateString()}, we are writing to inform you that we are currently assessing your information and will be in touch shortly.");
             result.Append("<br/> If you wish to discuss any aspect of your application, please contact us at AdmissionsTeam@Ulaw.co.uk.");
 
             return result.ToString();

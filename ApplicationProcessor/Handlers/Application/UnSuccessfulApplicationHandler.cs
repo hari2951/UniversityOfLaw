@@ -8,7 +8,7 @@ namespace Ulaw.ApplicationProcessor.Handler.Application
     {
         public override string HandleRequest(IApplication application)
         {
-            if (application.DegreeGrade == DegreeGradeEnum.third)
+            if (application.Candidate.DegreeGrade == DegreeGradeEnum.third)
             {
                 return GetHTMLTemplates.GetUnSuccessfulApplicationTemplate(application);
             }

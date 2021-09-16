@@ -1,14 +1,10 @@
 ﻿using System;
 using Ulaw.ApplicationProcessor.Enums;
 
-namespace Ulaw.ApplicationProcessor.Entity.Application
+namespace Ulaw.ApplicationProcessor.Entity.Candidates
 {
-    public interface IApplication
+    public interface ICandidate
     {
-        Guid ApplicationId { get; set; }
-        string Faculty { get; set; }
-        string CourseCode { get; set; }
-        DateTime StartDate { get; set; }
         string Title { get; set; }
         string FirstName { get; set; }
         string LastName { get; set; }
@@ -16,7 +12,5 @@ namespace Ulaw.ApplicationProcessor.Entity.Application
         bool RequiresVisa { get; set; }
         DegreeGradeEnum DegreeGrade { get; set; }
         DegreeSubjectEnum DegreeSubject { get; set; }
-
-        string Process();
     }
 }

@@ -8,7 +8,9 @@ namespace Ulaw.ApplicationProcessor.Handler.Application
     {
         public override string HandleRequest(IApplication application)
         {
-            if (application.DegreeGrade != DegreeGradeEnum.twoTwo && (application.DegreeSubject == DegreeSubjectEnum.law || application.DegreeSubject == DegreeSubjectEnum.lawAndBusiness))
+            if (application.Candidate.DegreeGrade != DegreeGradeEnum.twoTwo 
+                && (application.Candidate.DegreeSubject == DegreeSubjectEnum.law
+                || application.Candidate.DegreeSubject == DegreeSubjectEnum.lawAndBusiness))
             {
                 return GetHTMLTemplates.GetSuccessfulApplicationTemplate(application);
             }
