@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Ulaw.ApplicationProcessor.Entity.Application;
-using Ulaw.ApplicationProcessor.Entity.Candidates;
-using Ulaw.ApplicationProcessor.Entity.Courses;
+using Ulaw.ApplicationProcessor.Entities.Application;
+using Ulaw.ApplicationProcessor.Entities.Candidates;
+using Ulaw.ApplicationProcessor.Entities.Courses;
 using Ulaw.ApplicationProcessor.Enums;
 
 namespace ULaw.ApplicationProcessor.Tests
@@ -44,8 +44,8 @@ namespace ULaw.ApplicationProcessor.Tests
         [TestMethod]
         public void ApplicationSubmissionWithFirstLawDegree()
         {
-            _candidate.DegreeGrade = DegreeGradeEnum.first;
-            _candidate.DegreeSubject = DegreeSubjectEnum.law;
+            _candidate.DegreeGrade = DegreeGradeEnum.First;
+            _candidate.DegreeSubject = DegreeSubjectEnum.Law;
             Application thisSubmission = new Application(_candidate, _course);
 
             string emailHtml = thisSubmission.Process();
@@ -55,8 +55,8 @@ namespace ULaw.ApplicationProcessor.Tests
         [TestMethod]
         public void ApplicationSubmissionWithFirstLawAndBusinessDegree()
         {
-            _candidate.DegreeGrade = DegreeGradeEnum.first;
-            _candidate.DegreeSubject = DegreeSubjectEnum.lawAndBusiness;
+            _candidate.DegreeGrade = DegreeGradeEnum.First;
+            _candidate.DegreeSubject = DegreeSubjectEnum.LawAndBusiness;
             Application thisSubmission = new Application(_candidate, _course);
 
             string emailHtml = thisSubmission.Process();
@@ -66,7 +66,7 @@ namespace ULaw.ApplicationProcessor.Tests
         [TestMethod]
         public void ApplicationSubmissionWithFirstEnglishDegree()
         {
-            _candidate.DegreeGrade = DegreeGradeEnum.first;
+            _candidate.DegreeGrade = DegreeGradeEnum.First;
             _candidate.DegreeSubject = DegreeSubjectEnum.English;
             Application thisSubmission = new Application(_candidate, _course);
 
@@ -77,8 +77,8 @@ namespace ULaw.ApplicationProcessor.Tests
         [TestMethod]
         public void ApplicationSubmissionWithTwoOneLawDegree()
         {
-            _candidate.DegreeGrade = DegreeGradeEnum.twoOne;
-            _candidate.DegreeSubject = DegreeSubjectEnum.law;
+            _candidate.DegreeGrade = DegreeGradeEnum.TwoOne;
+            _candidate.DegreeSubject = DegreeSubjectEnum.Law;
             Application thisSubmission = new Application(_candidate, _course);
 
             string emailHtml = thisSubmission.Process();
@@ -88,8 +88,8 @@ namespace ULaw.ApplicationProcessor.Tests
         [TestMethod]
         public void ApplicationSubmissionWithTwoOneMathsDegree()
         {
-            _candidate.DegreeGrade = DegreeGradeEnum.twoOne;
-            _candidate.DegreeSubject = DegreeSubjectEnum.maths;
+            _candidate.DegreeGrade = DegreeGradeEnum.TwoOne;
+            _candidate.DegreeSubject = DegreeSubjectEnum.Maths;
             Application thisSubmission = new Application(_candidate, _course);
 
             string emailHtml = thisSubmission.Process();
@@ -99,8 +99,8 @@ namespace ULaw.ApplicationProcessor.Tests
         [TestMethod]
         public void ApplicationSubmissionWithTwoOneLawAndBusinessDegree()
         {
-            _candidate.DegreeGrade = DegreeGradeEnum.twoOne;
-            _candidate.DegreeSubject = DegreeSubjectEnum.lawAndBusiness;
+            _candidate.DegreeGrade = DegreeGradeEnum.TwoOne;
+            _candidate.DegreeSubject = DegreeSubjectEnum.LawAndBusiness;
             Application thisSubmission = new Application(_candidate, _course);
 
             string emailHtml = thisSubmission.Process();
@@ -110,7 +110,7 @@ namespace ULaw.ApplicationProcessor.Tests
         [TestMethod]
         public void ApplicationSubmissionWithTwoTwoEnglishDegree()
         {
-            _candidate.DegreeGrade = DegreeGradeEnum.twoTwo;
+            _candidate.DegreeGrade = DegreeGradeEnum.TwoTwo;
             _candidate.DegreeSubject = DegreeSubjectEnum.English;
             Application thisSubmission = new Application(_candidate, _course);
 
@@ -121,8 +121,8 @@ namespace ULaw.ApplicationProcessor.Tests
         [TestMethod]
         public void ApplicationSubmissionWithTwoTwoLawDegree()
         {
-            _candidate.DegreeGrade = DegreeGradeEnum.twoTwo;
-            _candidate.DegreeSubject = DegreeSubjectEnum.law;
+            _candidate.DegreeGrade = DegreeGradeEnum.TwoTwo;
+            _candidate.DegreeSubject = DegreeSubjectEnum.Law;
             Application thisSubmission = new Application(_candidate, _course);
 
             string emailHtml = thisSubmission.Process();
@@ -132,8 +132,8 @@ namespace ULaw.ApplicationProcessor.Tests
         [TestMethod]
         public void ApplicationSubmissionWithThirdDegree()
         {
-            _candidate.DegreeGrade = DegreeGradeEnum.third;
-            _candidate.DegreeSubject = DegreeSubjectEnum.maths;
+            _candidate.DegreeGrade = DegreeGradeEnum.Third;
+            _candidate.DegreeSubject = DegreeSubjectEnum.Maths;
             Application thisSubmission = new Application(_candidate, _course);
 
             string emailHtml = thisSubmission.Process();

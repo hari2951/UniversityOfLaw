@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using Ulaw.ApplicationProcessor.Entity.Application;
+using Ulaw.ApplicationProcessor.Entities.Application;
 using ULaw.ApplicationProcessor.Enums;
 
 namespace Ulaw.ApplicationProcessor.Templates

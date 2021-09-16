@@ -1,5 +1,4 @@
-﻿using Ulaw.ApplicationProcessor.Entity.Application;
-using Ulaw.ApplicationProcessor.Enums;
+﻿using Ulaw.ApplicationProcessor.Entities.Application;
 
 namespace Ulaw.ApplicationProcessor.Handler.Application
 {

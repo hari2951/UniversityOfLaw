@@ -5,12 +5,12 @@ namespace Ulaw.ApplicationProcessor.Enums
     public enum DegreeGradeEnum : int
     {
         [DescriptionAttribute("1st")]
-        first,
+        First,
         [DescriptionAttribute("2:1")]
-        twoOne,
+        TwoOne,
         [DescriptionAttribute("2:2")]
-        twoTwo,
+        TwoTwo,
         [DescriptionAttribute("3rd")]
-        third
+        Third
     }
 }

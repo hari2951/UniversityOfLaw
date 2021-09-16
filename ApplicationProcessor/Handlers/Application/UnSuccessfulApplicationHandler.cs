@@ -1,4 +1,4 @@
-﻿using Ulaw.ApplicationProcessor.Entity.Application;
+﻿using Ulaw.ApplicationProcessor.Entities.Application;
 using Ulaw.ApplicationProcessor.Enums;
 using Ulaw.ApplicationProcessor.Templates;
 
@@ -8,7 +8,7 @@ namespace Ulaw.ApplicationProcessor.Handler.Application
     {
         public override string HandleRequest(IApplication application)
         {
-            if (application.Candidate.DegreeGrade == DegreeGradeEnum.third)
+            if (application.Candidate.DegreeGrade == DegreeGradeEnum.Third)
             {
                 return GetHTMLTemplates.GetUnSuccessfulApplicationTemplate(application);
             }

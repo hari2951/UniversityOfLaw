@@ -1,4 +1,4 @@
-﻿using Ulaw.ApplicationProcessor.Entity.Application;
+﻿using Ulaw.ApplicationProcessor.Entities.Application;
 using Ulaw.ApplicationProcessor.Enums;
 using Ulaw.ApplicationProcessor.Templates;
 
@@ -8,9 +8,9 @@ namespace Ulaw.ApplicationProcessor.Handler.Application
     {
         public override string HandleRequest(IApplication application)
         {
-            if (application.Candidate.DegreeGrade != DegreeGradeEnum.twoTwo 
-                && (application.Candidate.DegreeSubject == DegreeSubjectEnum.law
-                || application.Candidate.DegreeSubject == DegreeSubjectEnum.lawAndBusiness))
+            if (application.Candidate.DegreeGrade != DegreeGradeEnum.TwoTwo 
+                && (application.Candidate.DegreeSubject == DegreeSubjectEnum.Law
+                || application.Candidate.DegreeSubject == DegreeSubjectEnum.LawAndBusiness))
             {
                 return GetHTMLTemplates.GetSuccessfulApplicationTemplate(application);
             }

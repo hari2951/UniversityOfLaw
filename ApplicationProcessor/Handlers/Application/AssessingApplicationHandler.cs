@@ -1,4 +1,4 @@
-﻿using Ulaw.ApplicationProcessor.Entity.Application;
+﻿using Ulaw.ApplicationProcessor.Entities.Application;
 using Ulaw.ApplicationProcessor.Templates;
 
 namespace Ulaw.ApplicationProcessor.Handler.Application

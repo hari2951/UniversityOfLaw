@@ -5,11 +5,11 @@ namespace Ulaw.ApplicationProcessor.Enums
     public enum DegreeSubjectEnum : int
     {
         [DescriptionAttribute("Law")]
-        law,
+        Law,
         [DescriptionAttribute("Law and Business")]
-        lawAndBusiness,
+        LawAndBusiness,
         [DescriptionAttribute("Maths")]
-        maths,
+        Maths,
         [DescriptionAttribute("English")]
         English
     }

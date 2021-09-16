@@ -1,7 +1,7 @@
 ﻿using System;
 using Ulaw.ApplicationProcessor.Enums;
 
-namespace Ulaw.ApplicationProcessor.Entity.Candidates
+namespace Ulaw.ApplicationProcessor.Entities.Candidates
 {
     public interface ICandidate
     {

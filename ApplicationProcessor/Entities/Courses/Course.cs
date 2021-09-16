@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ulaw.ApplicationProcessor.Entity.Courses
+namespace Ulaw.ApplicationProcessor.Entities.Courses
 {
     public class Course : ICourse
     {

@@ -1,9 +1,9 @@
 ﻿using System;
-using Ulaw.ApplicationProcessor.Entity.Candidates;
-using Ulaw.ApplicationProcessor.Entity.Courses;
+using Ulaw.ApplicationProcessor.Entities.Candidates;
+using Ulaw.ApplicationProcessor.Entities.Courses;
 using Ulaw.ApplicationProcessor.Enums;
 
-namespace Ulaw.ApplicationProcessor.Entity.Application
+namespace Ulaw.ApplicationProcessor.Entities.Application
 {
     public interface IApplication
     {
