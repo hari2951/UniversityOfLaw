@@ -33,5 +33,5 @@ I have noticed that in the html template when degree is Third (DegreeGradeEnum.t
 1.	Add more unit test cases for handlers. 
 2.	Exception handling and error logging can be improved by doing error and exception handling at low level.
 3.	Getting HTML template for each case can be done using a service that inherit from a common interface. By doing this, the output string can be changed dynamically. 
-4.	Can add more validation/defency coding
+4.	Can add more validation/deficiency coding
 
